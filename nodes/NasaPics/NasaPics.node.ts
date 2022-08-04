@@ -30,6 +30,23 @@ export class NasaPics implements INodeType {
 		},
 		properties: [
 			// Resources and operations go here
+			{
+				displayName: 'Resource',
+				name: 'resource',
+				type: 'options',
+				noDataExpression: true,
+				options: [
+					{
+						name: 'Astronomy Picture of the Day',
+						value: 'astronomyPictureOfTheDay',
+					},
+					{
+						name: 'Mars Rover Photo',
+						value: 'marsRoverPhotos',
+					},
+				],
+				default: 'astronomyPictureOfTheDay',
+			},
 		],
 	};
 }
