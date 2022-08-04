@@ -17,7 +17,7 @@ export class NasaPics implements INodeType {
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'NasaPicsApi', //must match name property in credential file
+				name: 'nasaPicsApi', //must match name property in credential file
 				required: true,
 			},
 		],
